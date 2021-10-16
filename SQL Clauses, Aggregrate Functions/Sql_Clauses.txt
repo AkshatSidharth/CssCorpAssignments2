@@ -1,0 +1,73 @@
+SQL CLAUSES
+SQL clauses site was designed to help programmers and IT professionals, yet unfamiliar with SQL (Structured Query Language) to learn the language and use it in their everyday work. Our tutorial shows how to put into practice various SQL clauses, SQL commands, SQL statements and SQL operators.
+
+If SQL clauses and commands like SELECT, INSERT, UPDATE, DELETE, WHERE, JOIN, DISTINCT, ORDER BY, GROUP BY, HAVING, and UNION sound like ancient Greek to you, then you have come to the right place. 
+Our goal is not to make you a SQL pro, but to introduce you to this powerful language and its clauses, and give you the foundation to continue your SQL training forward.
+
+SQL SELECT Statement
+
+SELECT column1, column2....columnN
+FROM table_name;
+
+SQL DISTINCT Clause
+
+SELECT DISTINCT column1, column2....columnN
+FROM table_name;
+
+SQL WHERE Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE CONDITION;
+
+SQL AND/OR Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE CONDITION-1 {AND|OR} CONDITION-2;
+
+SQL IN Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE column_name IN (val-1, val-2,...val-N);
+
+SQL BETWEEN Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE column_name BETWEEN val-1 AND val-2;
+
+SQL LIKE Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE column_name LIKE { PATTERN };
+
+SQL ORDER BY Clause
+
+SELECT column1, column2....columnN
+FROM table_name
+WHERE CONDITION
+ORDER BY column_name {ASC|DESC};
+
+SQL GROUP BY Clause
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE CONDITION
+GROUP BY column_name;
+
+SQL COUNT Clause
+
+SELECT COUNT(column_name)
+FROM table_name
+WHERE CONDITION;
+
+SQL HAVING Clause
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE CONDITION
+GROUP BY column_name
+HAVING (arithematic function condition);
