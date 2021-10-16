@@ -1,0 +1,41 @@
+SQL Aggregate Functions
+
+ 
+What is aggregate functions?
+Aggregate functions perform a calculation on a set of values and return a single value.
+Aggregate functions ignore NULL values except COUNT.
+It is used with the GROUP BY clause of the SELECT statement.
+Following are the Aggregate functions:
+1. AVG
+2. MAX
+3. MIN
+4. SUM
+5. COUNT()
+6. COUNT(*)
+
+Example
+
+<Employee> Table
+
+Eid	Ename	Age	City	  Salary
+E001	ABC	29	Pune	  20000
+E002	PQR	30	Pune	  30000
+E003	LMN	25	Mumbai	  5000
+E004	XYZ	24	Mumbai	  4000
+E005	STU	32	Bangalore	  25000
+
+1.  AVG	 It returns the average of the data values.	                 SELECT AVG  <column_name> FROM <table_name>;	    SELECT AVG(Salary) FROM Employee;	     AVG(Salary)16800
+
+2. MAX	 It returns the maximum value for a column.	                 SELECT MAX <column_name> FROM <table_name>;	    SELECT MAX(Salary) FROM Employee;	     MAX(Salary)30000
+
+3. MIN	 It returns the minimum value for a column.	                 SELECT MIN <column_name> FROM  <table_name>;	    SELECT MIN(Salary)  FROM Employee;	     MIN(Salary)4000
+
+4. SUM	 It returns the sum (addition) of the data values.	SELECT SUM<column_name> FROM <table_name>;	    SELECT SUM(Salary) FROM Employee        SUM(Salary)50000
+                                                                                                                                                                                                  WHERE City='Pune';	
+5. COUNT	 It returns total number of values in a given column.	SELECT COUNT<column_name>FROM<table_name>;   SELECT COUNT(Empid)FROM Employee;   COUNT(Empid)5
+
+6. COUNT(*) It returns the number of rows in a table.	                 SELECT COUNT(*)FROM<table_name>;	                     SELECT COUNT(*)FROM Employee;	     COUNT(*)5
+
+
+
+ 
